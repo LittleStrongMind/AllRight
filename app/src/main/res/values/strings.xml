@@ -1,0 +1,60 @@
+
+
+<resources>
+    <string name="app_name">AllRight</string>
+
+    <!-- ERROR -->
+    <string name="serverConnectionErrorStringValue">Could not connect to server !</string>
+    <string name="errorSubscribeWrongCorrespondancePasswordStringValue">Password not corresponding !</string>
+    <string name="errorJsonObjectNullStringValue">Error ! JsonObject is null !</string>
+    <string name="errorUsernameFieldEmptyStringValue">You have to specify a username !</string>
+    <string name="errorPasswordFieldEmptyStringValue">You have to specify a password !</string>
+
+    <!-- ConnectionActivity -->
+    <string name="usernameStringValue">username</string>
+    <string name="passwordStringValue">password</string>
+    <string name="signInButtonStringValue">Sign in</string>
+    <string name="notAlreadyUsingAllRightStringValue">Not already using AllRight ?</string>
+
+    <!-- SubscribeActivity -->
+    <string name="passwordComfirmationStringValue">comfirm your password</string>
+    <string name="emailStringValue">email</string>
+    <string name="signUpButtonStringValue">Sign up</string>
+    <string name="backToConnectionStringValue">back to connection</string>
+    <string name="contractTermsStringValue">I accept the terms of the contract</string>
+
+
+    <!-- AfterSubscribeActivity -->
+    <string name="afterSubscribeNoticeStringValue">Awesome !\n you\'re now a part of the \nAllRight community</string>
+    <!-- HomeActivity -->
+    <string name="addANewProject">Add a new project</string>
+    <string name="yourCurrentProjectStringValue">Your current project</string>
+        <!-- submenu -->
+        <string name="accountSettingStringValue">Account settings</string>
+        <string name="disconnectStringValue">Disconnect</string>
+        <string name="Statistics">Statistics</string>
+        <string name="Contact">Contact</string>
+
+
+    <!-- AfterUnsubscribeActivity -->
+    <string name="afterUnsubscribeNoticeStringValue">Already leaving ?\nWe\'re so sad...</string>
+    <string name="comfirmUnsubscribeStringValue">comfirm unsubscribe</string>
+
+    <!-- ResearchProjectActivity -->
+    <string name="backToProjectBoardStringValue">Back to Projects board</string>
+    <string name="researchBarHintStringValue">the name of the project</string>
+
+    <!-- ProjectInterface -->
+    <string name="calendarStringValue">Calendar</string>
+    <string name="statisticsStringValue">Statistics</string>
+    <string name="deadlinesStringValue">Deadlines</string>
+    <string name="messagesStringValue">Messages</string>
+
+        <!-- Administration -->
+        <string name="addUserStringValue">Add a user</string>
+        <string name="deleteUserStringValue">Delete a user</string>
+        <string name="uploadAFileStringValue">Upload a file</string>
+        <string name="taskDoneStringValue">Task done</string>
+        <string name="memberListStringValue">Member\'s List</string>
+
+</resources>

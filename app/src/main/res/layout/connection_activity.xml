@@ -1,0 +1,137 @@
+<!--
+
+  /$$$$$$  /$$ /$$ /$$$$$$$  /$$           /$$         /$$
+ /$$__  $$| $$| $$| $$__  $$|__/          | $$        | $$
+| $$  \ $$| $$| $$| $$  \ $$ /$$  /$$$$$$ | $$$$$$$  /$$$$$$
+| $$$$$$$$| $$| $$| $$$$$$$/| $$ /$$__  $$| $$__  $$|_  $$_/
+| $$__  $$| $$| $$| $$__  $$| $$| $$  \ $$| $$  \ $$  | $$
+| $$  | $$| $$| $$| $$  \ $$| $$| $$  | $$| $$  | $$  | $$ /$$
+| $$  | $$| $$| $$| $$  | $$| $$|  $$$$$$$| $$  | $$  |  $$$$/
+|__/  |__/|__/|__/|__/  |__/|__/ \____  $$|__/  |__/   \___/
+                                 /$$  \ $$
+                                |  $$$$$$/
+                                 \______/
+
+    AUTHOR : Jojo
+    CREATION DATE : 17/05/2015
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/connexionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <!-- Sign In button -->
+    <jojo.allright.CustomFont.CustomFontButton
+        android:id="@+id/signinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupButton"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/blue_button"
+        android:gravity="center|center_horizontal"
+        android:onClick="connect"
+        android:text="@string/signInButtonStringValue"
+        android:textColor="#ffffffff" />
+
+    <!-- Sign Up button -->
+    <jojo.allright.CustomFont.CustomFontButton
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/green_button"
+        android:nestedScrollingEnabled="false"
+        android:onClick="signUp"
+        android:text="@string/signUpButtonStringValue"
+        android:textColor="#ffffffff" />
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/notAlreadyUsingAllright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupButton"
+        android:layout_alignEnd="@+id/signinButton"
+        android:layout_alignLeft="@+id/signupButton"
+        android:layout_alignRight="@+id/signinButton"
+        android:layout_alignStart="@+id/signupButton"
+        android:layout_marginBottom="10dp"
+        android:fontFamily=""
+        android:text="@string/notAlreadyUsingAllRightStringValue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000"
+        android:textSize="19dp" />
+
+    <!-- Application name : AllRight -->
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff000000"
+        android:textSize="40dp" />
+
+    <!-- Password text field -->
+    <jojo.allright.CustomFont.CustomFontEditText
+        android:id="@+id/passwordTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signinButton"
+        android:layout_alignEnd="@+id/signinButton"
+        android:layout_alignLeft="@+id/signinButton"
+        android:layout_alignRight="@+id/signinButton"
+        android:layout_alignStart="@+id/signinButton"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/custom_edit_text"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/passwordStringValue"
+        android:inputType="textPassword"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:textColorHint="#ff000000" />
+
+    <!-- Username text field -->
+    <jojo.allright.CustomFont.CustomFontEditText
+        android:id="@+id/usernameTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordTextField"
+        android:layout_alignEnd="@+id/signupButton"
+        android:layout_alignLeft="@+id/passwordTextField"
+        android:layout_alignRight="@+id/signupButton"
+        android:layout_alignStart="@+id/passwordTextField"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/custom_edit_text"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:hint="@string/usernameStringValue"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:textColorHint="#ff000000"/>
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/errorConnectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffd15344"
+        android:textSize="20dp" />
+
+</RelativeLayout>

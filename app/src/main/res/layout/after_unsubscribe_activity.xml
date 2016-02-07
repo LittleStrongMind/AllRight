@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  /$$$$$$  /$$ /$$ /$$$$$$$  /$$           /$$         /$$
+ /$$__  $$| $$| $$| $$__  $$|__/          | $$        | $$
+| $$  \ $$| $$| $$| $$  \ $$ /$$  /$$$$$$ | $$$$$$$  /$$$$$$
+| $$$$$$$$| $$| $$| $$$$$$$/| $$ /$$__  $$| $$__  $$|_  $$_/
+| $$__  $$| $$| $$| $$__  $$| $$| $$  \ $$| $$  \ $$  | $$
+| $$  | $$| $$| $$| $$  \ $$| $$| $$  | $$| $$  | $$  | $$ /$$
+| $$  | $$| $$| $$| $$  | $$| $$|  $$$$$$$| $$  | $$  |  $$$$/
+|__/  |__/|__/|__/|__/  |__/|__/ \____  $$|__/  |__/   \___/
+                                 /$$  \ $$
+                                |  $$$$$$/
+                                 \______/
+
+    AUTHOR : Jojo
+    CREATION DATE : 17/05/2015
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connexionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:onClick="backToConnection"
+    tools:context=".AfterUnsubscribeActivity">
+
+
+    <!-- AllRight -->
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/errorUnsubscribeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffd15344" />
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/afterSubscribeNoticeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/afterUnsubscribeNoticeStringValue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp" />
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/comfirmUnsubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:onClick="comfirmUnsubscribe"
+        android:text="comfirm and leave :("
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffe81355"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/currentusernameUnsubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/afterSubscribeNoticeTextView"
+        android:layout_alignRight="@+id/afterSubscribeNoticeTextView"
+        android:layout_centerVertical="true"
+        android:text="New Text"
+        android:visibility="invisible" />
+
+</RelativeLayout>

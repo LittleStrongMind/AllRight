@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  /$$$$$$  /$$ /$$ /$$$$$$$  /$$           /$$         /$$
+ /$$__  $$| $$| $$| $$__  $$|__/          | $$        | $$
+| $$  \ $$| $$| $$| $$  \ $$ /$$  /$$$$$$ | $$$$$$$  /$$$$$$
+| $$$$$$$$| $$| $$| $$$$$$$/| $$ /$$__  $$| $$__  $$|_  $$_/
+| $$__  $$| $$| $$| $$__  $$| $$| $$  \ $$| $$  \ $$  | $$
+| $$  | $$| $$| $$| $$  \ $$| $$| $$  | $$| $$  | $$  | $$ /$$
+| $$  | $$| $$| $$| $$  | $$| $$|  $$$$$$$| $$  | $$  |  $$$$/
+|__/  |__/|__/|__/|__/  |__/|__/ \____  $$|__/  |__/   \___/
+                                 /$$  \ $$
+                                |  $$$$$$/
+                                 \______/
+
+    AUTHOR : Jojo
+    CREATION DATE : 17/05/2015
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#ffffffff" />
+
+    <stroke
+        android:width="3dp"
+        android:color="#ff000000" />
+    <corners
+        android:bottomLeftRadius="6dp"
+        android:bottomRightRadius="6dp"
+        android:topLeftRadius="6dp"
+        android:topRightRadius="6dp"/>
+
+</shape>

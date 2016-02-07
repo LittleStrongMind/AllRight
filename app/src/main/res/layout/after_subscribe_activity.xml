@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  /$$$$$$  /$$ /$$ /$$$$$$$  /$$           /$$         /$$
+ /$$__  $$| $$| $$| $$__  $$|__/          | $$        | $$
+| $$  \ $$| $$| $$| $$  \ $$ /$$  /$$$$$$ | $$$$$$$  /$$$$$$
+| $$$$$$$$| $$| $$| $$$$$$$/| $$ /$$__  $$| $$__  $$|_  $$_/
+| $$__  $$| $$| $$| $$__  $$| $$| $$  \ $$| $$  \ $$  | $$
+| $$  | $$| $$| $$| $$  \ $$| $$| $$  | $$| $$  | $$  | $$ /$$
+| $$  | $$| $$| $$| $$  | $$| $$|  $$$$$$$| $$  | $$  |  $$$$/
+|__/  |__/|__/|__/|__/  |__/|__/ \____  $$|__/  |__/   \___/
+                                 /$$  \ $$
+                                |  $$$$$$/
+                                 \______/
+
+    AUTHOR : Jojo
+    CREATION DATE : 17/05/2015
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connexionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:onClick="backToConnection"
+    tools:context=".AfterSubscribeActivity">
+
+
+    <!-- AllRight -->
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff000000"
+        android:textIsSelectable="false"
+        android:textSize="40sp" />
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/errorSubscribeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffd15344" />
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/afterSubscribeNoticeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/afterSubscribeNoticeStringValue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp" />
+
+    <jojo.allright.CustomFont.CustomFontTextView
+        android:id="@+id/backToConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/afterSubscribeNoticeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="92dp"
+        android:onClick="backToConnection"
+        android:text="@string/backToConnectionStringValue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000"
+        android:textSize="22dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/backToConnection"
+        android:layout_toLeftOf="@+id/backToConnection"
+        android:layout_toStartOf="@+id/backToConnection"
+        android:background="@drawable/icon_arrow_left"
+        android:clickable="true"
+        android:onClick="backToConnexion" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jojo.allright">
+
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ConnectionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name=".Activity.ConnectionActivity"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.HomeActivity"></activity>
+        <activity android:name=".Activity.SubscribeActivity"></activity>
+        <activity android:name=".Activity.ProjectActivity"></activity>
+        <activity android:name=".Activity.AfterSubscribeActivity"></activity>
+        <activity android:name=".Activity.AfterUnsubscribeActivity"></activity>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
